@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2M\\source\\repos\\WebApiProductClient\\WebApiProductClient.csproj": {}
+    "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\WebApiProductClient\\WebApiProductClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2M\\source\\repos\\WebApiProductClient\\WebApiProductClient.csproj": {
+    "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\WebApiProductClient\\WebApiProductClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2M\\source\\repos\\WebApiProductClient\\WebApiProductClient.csproj",
+        "projectUniqueName": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\WebApiProductClient\\WebApiProductClient.csproj",
         "projectName": "WebApiProductClient",
-        "projectPath": "C:\\Users\\2M\\source\\repos\\WebApiProductClient\\WebApiProductClient.csproj",
+        "projectPath": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\WebApiProductClient\\WebApiProductClient.csproj",
         "packagesPath": "C:\\Users\\2M\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2M\\source\\repos\\WebApiProductClient\\obj\\",
+        "outputPath": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\WebApiProductClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\2M\\AppData\\Roaming\\NuGet\\NuGet.Config",

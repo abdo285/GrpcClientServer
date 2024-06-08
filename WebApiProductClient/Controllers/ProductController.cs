@@ -2,6 +2,7 @@
 using Grpc.Net.Client;
 using WebApiProductClient.Protos; 
 using Microsoft.AspNetCore.Mvc;
+using Grpc.Core;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -64,5 +65,24 @@ public class ProductController : ControllerBase
         var response = await call.ResponseAsync;
 
         return Ok($"Successfully added {response.Count} products.");
+    }
+    [HttpGet("generateproductreport")]
+    public async Task<IActionResult> GenerateProductReport([FromQuery] string category, [FromQuery] bool orderByPrice)
+    {
+        var request = new ProductReportRequest
+        {
+            Category = category,
+            OrderByPrice = orderByPrice
+        };
+
+        using var call = _grpcClient.GetProductReport(request);
+        var products = new List<Product>();
+
+        await foreach (var product in call.ResponseStream.ReadAllAsync())
+        {
+            products.Add(product);
+        }
+
+        return Ok(products);
     }
 }

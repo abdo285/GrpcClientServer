@@ -55,6 +55,8 @@ namespace WebApiProductClient.Protos {
     static readonly grpc::Marshaller<global::WebApiProductClient.Protos.ProductResponse> __Marshaller_product_ProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WebApiProductClient.Protos.ProductResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::WebApiProductClient.Protos.BulkProductResponse> __Marshaller_product_BulkProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WebApiProductClient.Protos.BulkProductResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::WebApiProductClient.Protos.ProductReportRequest> __Marshaller_product_ProductReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::WebApiProductClient.Protos.ProductReportRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::WebApiProductClient.Protos.ProductRequest, global::WebApiProductClient.Protos.ProductExistResponse> __Method_GetProductById = new grpc::Method<global::WebApiProductClient.Protos.ProductRequest, global::WebApiProductClient.Protos.ProductExistResponse>(
@@ -87,6 +89,14 @@ namespace WebApiProductClient.Protos {
         "AddBulkProducts",
         __Marshaller_product_Product,
         __Marshaller_product_BulkProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::WebApiProductClient.Protos.ProductReportRequest, global::WebApiProductClient.Protos.Product> __Method_GetProductReport = new grpc::Method<global::WebApiProductClient.Protos.ProductReportRequest, global::WebApiProductClient.Protos.Product>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetProductReport",
+        __Marshaller_product_ProductReportRequest,
+        __Marshaller_product_Product);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -190,6 +200,16 @@ namespace WebApiProductClient.Protos {
       public virtual grpc::AsyncClientStreamingCall<global::WebApiProductClient.Protos.Product, global::WebApiProductClient.Protos.BulkProductResponse> AddBulkProducts(grpc::CallOptions options)
       {
         return CallInvoker.AsyncClientStreamingCall(__Method_AddBulkProducts, null, options);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::WebApiProductClient.Protos.Product> GetProductReport(global::WebApiProductClient.Protos.ProductReportRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProductReport(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::WebApiProductClient.Protos.Product> GetProductReport(global::WebApiProductClient.Protos.ProductReportRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_GetProductReport, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

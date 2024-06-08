@@ -25,26 +25,30 @@ namespace GrpcProductServer.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIHcHJvZHVjdCIcCg5Qcm9kdWN0UmVx",
-            "dWVzdBIKCgJpZBgBIAEoBSIyCgdQcm9kdWN0EgoKAmlkGAEgASgFEgwKBG5h",
-            "bWUYAiABKAkSDQoFcHJpY2UYAyABKAEiJgoUUHJvZHVjdEV4aXN0UmVzcG9u",
-            "c2USDgoGZXhpc3RzGAEgASgIIjMKD1Byb2R1Y3RSZXNwb25zZRIPCgdzdWNj",
-            "ZXNzGAEgASgIEg8KB21lc3NhZ2UYAiABKAkiJAoTQnVsa1Byb2R1Y3RSZXNw",
-            "b25zZRINCgVjb3VudBgBIAEoBTKZAgoOUHJvZHVjdFNlcnZpY2USSAoOR2V0",
-            "UHJvZHVjdEJ5SWQSFy5wcm9kdWN0LlByb2R1Y3RSZXF1ZXN0Gh0ucHJvZHVj",
-            "dC5Qcm9kdWN0RXhpc3RSZXNwb25zZRI7Cg1DcmVhdGVQcm9kdWN0EhAucHJv",
-            "ZHVjdC5Qcm9kdWN0GhgucHJvZHVjdC5Qcm9kdWN0UmVzcG9uc2USOwoNVXBk",
-            "YXRlUHJvZHVjdBIQLnByb2R1Y3QuUHJvZHVjdBoYLnByb2R1Y3QuUHJvZHVj",
-            "dFJlc3BvbnNlEkMKD0FkZEJ1bGtQcm9kdWN0cxIQLnByb2R1Y3QuUHJvZHVj",
-            "dBocLnByb2R1Y3QuQnVsa1Byb2R1Y3RSZXNwb25zZSgBQhuqAhhHcnBjUHJv",
-            "ZHVjdFNlcnZlci5Qcm90b3NiBnByb3RvMw=="));
+            "dWVzdBIKCgJpZBgBIAEoBSJECgdQcm9kdWN0EgoKAmlkGAEgASgFEgwKBG5h",
+            "bWUYAiABKAkSDQoFcHJpY2UYAyABKAESEAoIY2F0ZWdvcnkYBCABKAkiJgoU",
+            "UHJvZHVjdEV4aXN0UmVzcG9uc2USDgoGZXhpc3RzGAEgASgIIjMKD1Byb2R1",
+            "Y3RSZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIEg8KB21lc3NhZ2UYAiABKAki",
+            "JAoTQnVsa1Byb2R1Y3RSZXNwb25zZRINCgVjb3VudBgBIAEoBSJAChRQcm9k",
+            "dWN0UmVwb3J0UmVxdWVzdBIQCghjYXRlZ29yeRgBIAEoCRIWCg5vcmRlcl9i",
+            "eV9wcmljZRgCIAEoCDLgAgoOUHJvZHVjdFNlcnZpY2USSAoOR2V0UHJvZHVj",
+            "dEJ5SWQSFy5wcm9kdWN0LlByb2R1Y3RSZXF1ZXN0Gh0ucHJvZHVjdC5Qcm9k",
+            "dWN0RXhpc3RSZXNwb25zZRI7Cg1DcmVhdGVQcm9kdWN0EhAucHJvZHVjdC5Q",
+            "cm9kdWN0GhgucHJvZHVjdC5Qcm9kdWN0UmVzcG9uc2USOwoNVXBkYXRlUHJv",
+            "ZHVjdBIQLnByb2R1Y3QuUHJvZHVjdBoYLnByb2R1Y3QuUHJvZHVjdFJlc3Bv",
+            "bnNlEkMKD0FkZEJ1bGtQcm9kdWN0cxIQLnByb2R1Y3QuUHJvZHVjdBocLnBy",
+            "b2R1Y3QuQnVsa1Byb2R1Y3RSZXNwb25zZSgBEkUKEEdldFByb2R1Y3RSZXBv",
+            "cnQSHS5wcm9kdWN0LlByb2R1Y3RSZXBvcnRSZXF1ZXN0GhAucHJvZHVjdC5Q",
+            "cm9kdWN0MAFCG6oCGEdycGNQcm9kdWN0U2VydmVyLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.ProductRequest), global::GrpcProductServer.Protos.ProductRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.Product), global::GrpcProductServer.Protos.Product.Parser, new[]{ "Id", "Name", "Price" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.Product), global::GrpcProductServer.Protos.Product.Parser, new[]{ "Id", "Name", "Price", "Category" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.ProductExistResponse), global::GrpcProductServer.Protos.ProductExistResponse.Parser, new[]{ "Exists" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.ProductResponse), global::GrpcProductServer.Protos.ProductResponse.Parser, new[]{ "Success", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.BulkProductResponse), global::GrpcProductServer.Protos.BulkProductResponse.Parser, new[]{ "Count" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.BulkProductResponse), global::GrpcProductServer.Protos.BulkProductResponse.Parser, new[]{ "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcProductServer.Protos.ProductReportRequest), global::GrpcProductServer.Protos.ProductReportRequest.Parser, new[]{ "Category", "OrderByPrice" }, null, null, null, null)
           }));
     }
     #endregion
@@ -277,6 +281,7 @@ namespace GrpcProductServer.Protos {
       id_ = other.id_;
       name_ = other.name_;
       price_ = other.price_;
+      category_ = other.category_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -322,6 +327,18 @@ namespace GrpcProductServer.Protos {
       }
     }
 
+    /// <summary>Field number for the "category" field.</summary>
+    public const int CategoryFieldNumber = 4;
+    private string category_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Category {
+      get { return category_; }
+      set {
+        category_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -340,6 +357,7 @@ namespace GrpcProductServer.Protos {
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Price, other.Price)) return false;
+      if (Category != other.Category) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -350,6 +368,7 @@ namespace GrpcProductServer.Protos {
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Price != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Price);
+      if (Category.Length != 0) hash ^= Category.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -380,6 +399,10 @@ namespace GrpcProductServer.Protos {
         output.WriteRawTag(25);
         output.WriteDouble(Price);
       }
+      if (Category.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Category);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -402,6 +425,10 @@ namespace GrpcProductServer.Protos {
         output.WriteRawTag(25);
         output.WriteDouble(Price);
       }
+      if (Category.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Category);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -420,6 +447,9 @@ namespace GrpcProductServer.Protos {
       }
       if (Price != 0D) {
         size += 1 + 8;
+      }
+      if (Category.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Category);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -441,6 +471,9 @@ namespace GrpcProductServer.Protos {
       }
       if (other.Price != 0D) {
         Price = other.Price;
+      }
+      if (other.Category.Length != 0) {
+        Category = other.Category;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -469,6 +502,10 @@ namespace GrpcProductServer.Protos {
             Price = input.ReadDouble();
             break;
           }
+          case 34: {
+            Category = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -494,6 +531,10 @@ namespace GrpcProductServer.Protos {
           }
           case 25: {
             Price = input.ReadDouble();
+            break;
+          }
+          case 34: {
+            Category = input.ReadString();
             break;
           }
         }
@@ -1098,6 +1139,232 @@ namespace GrpcProductServer.Protos {
             break;
           case 8: {
             Count = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ProductReportRequest : pb::IMessage<ProductReportRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProductReportRequest> _parser = new pb::MessageParser<ProductReportRequest>(() => new ProductReportRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProductReportRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GrpcProductServer.Protos.ProductReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductReportRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductReportRequest(ProductReportRequest other) : this() {
+      category_ = other.category_;
+      orderByPrice_ = other.orderByPrice_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductReportRequest Clone() {
+      return new ProductReportRequest(this);
+    }
+
+    /// <summary>Field number for the "category" field.</summary>
+    public const int CategoryFieldNumber = 1;
+    private string category_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Category {
+      get { return category_; }
+      set {
+        category_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "order_by_price" field.</summary>
+    public const int OrderByPriceFieldNumber = 2;
+    private bool orderByPrice_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OrderByPrice {
+      get { return orderByPrice_; }
+      set {
+        orderByPrice_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProductReportRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProductReportRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Category != other.Category) return false;
+      if (OrderByPrice != other.OrderByPrice) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Category.Length != 0) hash ^= Category.GetHashCode();
+      if (OrderByPrice != false) hash ^= OrderByPrice.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Category.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Category);
+      }
+      if (OrderByPrice != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(OrderByPrice);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Category.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Category);
+      }
+      if (OrderByPrice != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(OrderByPrice);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Category.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Category);
+      }
+      if (OrderByPrice != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProductReportRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Category.Length != 0) {
+        Category = other.Category;
+      }
+      if (other.OrderByPrice != false) {
+        OrderByPrice = other.OrderByPrice;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Category = input.ReadString();
+            break;
+          }
+          case 16: {
+            OrderByPrice = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Category = input.ReadString();
+            break;
+          }
+          case 16: {
+            OrderByPrice = input.ReadBool();
             break;
           }
         }

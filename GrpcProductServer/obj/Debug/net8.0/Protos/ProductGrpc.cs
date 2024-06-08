@@ -55,6 +55,8 @@ namespace GrpcProductServer.Protos {
     static readonly grpc::Marshaller<global::GrpcProductServer.Protos.ProductResponse> __Marshaller_product_ProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcProductServer.Protos.ProductResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::GrpcProductServer.Protos.BulkProductResponse> __Marshaller_product_BulkProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcProductServer.Protos.BulkProductResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::GrpcProductServer.Protos.ProductReportRequest> __Marshaller_product_ProductReportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcProductServer.Protos.ProductReportRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::GrpcProductServer.Protos.ProductRequest, global::GrpcProductServer.Protos.ProductExistResponse> __Method_GetProductById = new grpc::Method<global::GrpcProductServer.Protos.ProductRequest, global::GrpcProductServer.Protos.ProductExistResponse>(
@@ -87,6 +89,14 @@ namespace GrpcProductServer.Protos {
         "AddBulkProducts",
         __Marshaller_product_Product,
         __Marshaller_product_BulkProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::GrpcProductServer.Protos.ProductReportRequest, global::GrpcProductServer.Protos.Product> __Method_GetProductReport = new grpc::Method<global::GrpcProductServer.Protos.ProductReportRequest, global::GrpcProductServer.Protos.Product>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetProductReport",
+        __Marshaller_product_ProductReportRequest,
+        __Marshaller_product_Product);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -122,6 +132,12 @@ namespace GrpcProductServer.Protos {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task GetProductReport(global::GrpcProductServer.Protos.ProductReportRequest request, grpc::IServerStreamWriter<global::GrpcProductServer.Protos.Product> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -133,7 +149,8 @@ namespace GrpcProductServer.Protos {
           .AddMethod(__Method_GetProductById, serviceImpl.GetProductById)
           .AddMethod(__Method_CreateProduct, serviceImpl.CreateProduct)
           .AddMethod(__Method_UpdateProduct, serviceImpl.UpdateProduct)
-          .AddMethod(__Method_AddBulkProducts, serviceImpl.AddBulkProducts).Build();
+          .AddMethod(__Method_AddBulkProducts, serviceImpl.AddBulkProducts)
+          .AddMethod(__Method_GetProductReport, serviceImpl.GetProductReport).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -147,6 +164,7 @@ namespace GrpcProductServer.Protos {
       serviceBinder.AddMethod(__Method_CreateProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcProductServer.Protos.Product, global::GrpcProductServer.Protos.ProductResponse>(serviceImpl.CreateProduct));
       serviceBinder.AddMethod(__Method_UpdateProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcProductServer.Protos.Product, global::GrpcProductServer.Protos.ProductResponse>(serviceImpl.UpdateProduct));
       serviceBinder.AddMethod(__Method_AddBulkProducts, serviceImpl == null ? null : new grpc::ClientStreamingServerMethod<global::GrpcProductServer.Protos.Product, global::GrpcProductServer.Protos.BulkProductResponse>(serviceImpl.AddBulkProducts));
+      serviceBinder.AddMethod(__Method_GetProductReport, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::GrpcProductServer.Protos.ProductReportRequest, global::GrpcProductServer.Protos.Product>(serviceImpl.GetProductReport));
     }
 
   }

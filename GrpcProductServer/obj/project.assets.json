@@ -795,11 +795,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2M\\source\\repos\\GrpcProductServer\\GrpcProductServer.csproj",
+      "projectUniqueName": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\GrpcProductServer\\GrpcProductServer.csproj",
       "projectName": "GrpcProductServer",
-      "projectPath": "C:\\Users\\2M\\source\\repos\\GrpcProductServer\\GrpcProductServer.csproj",
+      "projectPath": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\GrpcProductServer\\GrpcProductServer.csproj",
       "packagesPath": "C:\\Users\\2M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2M\\source\\repos\\GrpcProductServer\\obj\\",
+      "outputPath": "C:\\Users\\2M\\source\\repos\\GrpcCLientServer\\GrpcProductServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\2M\\AppData\\Roaming\\NuGet\\NuGet.Config",

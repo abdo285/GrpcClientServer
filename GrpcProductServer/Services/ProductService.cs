@@ -35,9 +35,9 @@ public class ProductService : ProductServiceBase
         var existingProduct = Products.Find(p => p.Id == request.Id);
         if (existingProduct != null)
         {
-            // Update the existing product
             existingProduct.Name = request.Name;
             existingProduct.Price = request.Price;
+            existingProduct.Category = request.Category;
             return Task.FromResult(new ProductResponse { Success = true, Message = "Product updated successfully." });
         }
         else
@@ -45,7 +45,6 @@ public class ProductService : ProductServiceBase
             return Task.FromResult(new ProductResponse { Success = false, Message = "Product not found." });
         }
     }
-
     public override async Task<BulkProductResponse> AddBulkProducts(IAsyncStreamReader<Product> requestStream, ServerCallContext context)
     {
         int count = 0;
@@ -58,6 +57,26 @@ public class ProductService : ProductServiceBase
             }
         }
         return new BulkProductResponse { Count = count };
+    }
+
+    public override async Task GetProductReport(ProductReportRequest request, IServerStreamWriter<Product> responseStream, ServerCallContext context)
+    {
+        var filteredProducts = Products.AsEnumerable();
+
+        if (!string.IsNullOrEmpty(request.Category))
+        {
+            filteredProducts = filteredProducts.Where(p => p.Category == request.Category);
+        }
+
+        if (request.OrderByPrice)
+        {
+            filteredProducts = filteredProducts.OrderBy(p => p.Price);
+        }
+
+        foreach (var product in filteredProducts)
+        {
+            await responseStream.WriteAsync(product);
+        }
     }
 }
 
