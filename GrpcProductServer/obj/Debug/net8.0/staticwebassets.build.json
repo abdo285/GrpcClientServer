@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "spfNA3PDayUs6D5tteMB4whl3i9gObAVlGa/jEzEfAY=",
+  "Source": "GrpcProductServer",
+  "BasePath": "_content/GrpcProductServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
